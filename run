@@ -1,0 +1,1 @@
+ffmpeg -i https://sub2.neetball.net/live/neet.m3u8 -vcodec libx264 -pix_fmt yuvj420p -maxrate 2048k -preset ultrafast -r 12 -framerate 1 -g 50 -crf 51 -c:a aac -b:a 128k -ar 44100 -strict experimental -video_track_timescale 100 -b:v 500k -f flv  rtmp://a.rtmp.youtube.com/live2/dpm6-5uvb-rz5k-d8kx-ddvf
